@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  input[type="text"],
+  input[type="number"],
+  select {
+    @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500;
+  }
+}
+
+@layer utilities {
+  .timeline-connector {
+    @apply absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-blue-200;
+  }
+}
